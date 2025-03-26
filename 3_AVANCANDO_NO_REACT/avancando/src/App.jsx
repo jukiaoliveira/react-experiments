@@ -1,4 +1,4 @@
-import { Children, useState } from "react";
+import { Children} from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -38,7 +38,9 @@ import Container from "./components/Container";
 import ExecuteFunction from "./components/ExecuteFunction";
 
 // 15 - state lift
+import { useState } from "react";
 import Message from "./components/Message";
+import ChangeMessage from "./components/ChangeMessage"; 
 
 function App() {
   // 14 - função em prop
@@ -97,7 +99,8 @@ function App() {
       {/* 14 - função em prop */}
       <ExecuteFunction myFunction={showMessage} />
       {/* 15 - state lift */}
-      <Message handleMessage={handleMessage} />
+      <Message msg={message} />
+      <ChangeMessage handleMessage={handleMessage} />
     </div>
   );
 }
