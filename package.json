@@ -19,5 +19,8 @@
   "description": "",
   "dependencies": {
     "react-scripts": "^3.0.1"
+  },
+  "devDependencies": {
+    "vite": "^6.2.3"
   }
 }
